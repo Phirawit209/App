@@ -121,6 +121,7 @@ const Signup = ({navigation}) => {
                             onChangPasswordeText={handleChange('password')}
                             onBlur={handleBlur('password')}
                             value={values.password}
+                            keyboardType="number-pad"
                             secureTextEntry={hidePassword}
                             isPassword={true}
                             hidePassword={hidePassword}
@@ -134,6 +135,7 @@ const Signup = ({navigation}) => {
                             onChangPasswordeText={handleChange('confirmpassword')}
                             onBlur={handleBlur('confirmpassword')}
                             value={values.confirmpassword}
+                            keyboardType="number-pad"
                             secureTextEntry={hidePassword}
                             isPassword={true}
                             hidePassword={hidePassword}
@@ -167,7 +169,7 @@ const Signup = ({navigation}) => {
                             onChangeText={handleChange('citizen')}
                             onBlur={handleBlur('citizen')}
                             value={values.citizen}
-                            keyboardType="email-address"
+                            keyboardType="number-pad"
                         />
                          <MyTextInput 
                             label="Phone Number"
@@ -177,7 +179,7 @@ const Signup = ({navigation}) => {
                             onChangeText={handleChange('phone')}
                             onBlur={handleBlur('phone')}
                             value={values.phone}
-                            keyboardType="email-address"
+                            keyboardType="number-pad"
                         />
                         <MyTextInput 
                             label="Date of Birth"

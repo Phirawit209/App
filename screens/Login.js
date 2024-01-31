@@ -56,7 +56,7 @@ const Login = ({navigation}) => {
                     initialValues={{username:'', password: ''}}
                     onSubmit={(values) => {
                        console.log(values);
-                       navigation.navigate("Welcome");
+                       navigation.navigate("Verification");
                     }}
                 >
 
@@ -81,6 +81,7 @@ const Login = ({navigation}) => {
                             onChangeText={handleChange('password')}
                             onBlur={handleBlur('password')}
                             value={values.password}
+                            keyboardType="number-pad"
                             secureTextEntry={hidePassword}
                             isPassword={true}
                             hidePassword={hidePassword}
